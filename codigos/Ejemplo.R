@@ -4,7 +4,7 @@ print("* Por: Dr. Jorge Chávez Carlos.");
 print("*********************************************");
 #install.packages("readxl")
 "library(readxl)
-Lista = read.csv("https://raw.githubusercontent.com/NuclearGeorge/CURSO-DE-R/master/archivos/CALIFICACIONES.csv")
+Lista = read.csv("https://raw.githubusercontent.com/NuclearGeorge/CURSO-DE-R/master/archivos/CALIFICACIONES.csv", header = FALSE)
 x = Lista[[9]] # Calificaciones Totales
 y = as.numeric(x)[12:length(x)]; # Números
 l = length(y);
